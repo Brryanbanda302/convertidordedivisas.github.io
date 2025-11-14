@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERTIDOR DE DIVISAS</title>
+    <link rel="stylesheet" href="css/miStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>CONVERTIDOR DE DIVISAS</h1>
+        <p> <strong>CONVERTIDOR DE DIVISAS CON DIFERENTE TIPO DE MONEDA</strong></p>
+    </header>
+
+    <main class="container">
+        <section class="formulario">
+            <form id="forma">
+                <label for="cantidad">🌮 CANTIDAD DE PESOS MEXICANOS 🌮</label>
+                <input type="number" id="cantidad" placeholder="EJEMPLO: 1000" required>
+                <hr>
+                <label for="moneda">CONVERTIR A:</label>
+                <hr>
+                <select id="moneda" required>
+                    <option value="usd">DOLAR ESTADOUNIDENSE 🦅</option>
+                    <option value="eur">EUROS🕊️ </option>
+                    <option value="gbp">LIBRA ESTERLINA 🦁</option>
+                    <option value="jpy">YENES 🐉</option>
+                </select>
+                <hr>
+                <input type="submit" value="CONVERTIR">
+            </form>
+        </section>
+
+        <section class="resultado">
+            <h2>CONVERCIÓN:</h2>
+            <p id="res"></p>
+        </section>
+    </main>
+
+    <script src="js/miScript.js"></script>
+</body>
+
+</html>
